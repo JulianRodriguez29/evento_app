@@ -36,13 +36,13 @@ Esta es una aplicacion sencilla para realizar reservaciones a eventos. Cuando el
 # Screenshots del proyecto
 
 La página principal del proyecto donde se despliegan los eventos que han sido incluidos en la base de datos.
-![Screenshot](./screenshosts/index_eventos.png)
+![Screenshot](./screenshost/index_eventos.png)
 
 Una vez que el usuario selecciona el evento al que se quiere registrar se le redirige al form de registro.
-![Screenshot](./screenshosts/form_de_registro.png)
+![Screenshot](./screenshost/form_de_registro.png)
 
 Una vez ha ingresado la información se le confirma su reservación.
-![Screenshot](./screenshosts/confirmacion_de_reservacion.jpg)
+![Screenshot](./screenshost/confirmacion_de_reservacion.jpg)
 
 Después se le manda un correo con el resumen de su reservación.
-![Screenshot](./screenshosts/email_de_reservacion.jpg)
+![Screenshot](./screenshost/email_de_reservacion.jpg)
