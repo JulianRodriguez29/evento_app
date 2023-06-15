@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+</head>
+<body>
+  <h1>Confirmación de reservación</h1>
+  <p>Hola <%= @reservation.nombre %>,</p>
+  <p>Tu reservación ha sido confirmada para el evento.</p>
+  <p>Detalles de la reserva:</p>
+  <ul>
+    <li>Nombre del evento: <%= @evento.nombre %></li>
+    <li>Fecha y hora: <%= @evento.fecha %></li>
+    <li>Descripción: <%= @evento.descripcion %></li>
+  </ul>
+</body>
+</html>

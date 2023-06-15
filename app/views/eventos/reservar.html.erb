@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Reservar Evento: <%= @evento.nombre %></h1>
+      <%= form_tag confirmar_reservacion_evento_path(id: @evento.id), method: :post do %>
+        <div class="form-group">
+          <%= label_tag 'nombre', 'Nombre:' %>
+          <%= text_field_tag 'nombre', nil, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= label_tag 'correo', 'Correo:' %>
+          <%= text_field_tag 'correo', nil, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= label_tag 'curp', 'CURP:' %>
+          <%= text_field_tag 'curp', nil, class: "form-control" %>
+        </div>
+        <div class="text-center mt-2"> 
+                <%= submit_tag 'Reservar', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

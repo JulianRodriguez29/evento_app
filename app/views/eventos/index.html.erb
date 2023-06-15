@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="display-4">Lista de Eventos</h1>
+      <ul class="list-group">
+        <% @eventos.each do |evento| %>
+        <li className="list-group-item">
+          <%= link_to evento.nombre, evento, class: "text-decoration-none" %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
