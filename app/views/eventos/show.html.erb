@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       <h1><%= @evento.nombre %></h1>
+      <img class="container w-50" src="<%= @evento.imagen_url %>" alt="<%= @evento.nombre %>">
       <p><%= @evento.descripcion %></p>
       <%= link_to 'Reservar', reservar_evento_path(@evento), class: "btn btn-primary" %>
     </div>
