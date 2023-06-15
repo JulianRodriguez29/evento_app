@@ -1,10 +1,20 @@
 # Evento App
 
-Esta es una aplicacion sencilla para realizar reservaciones a eventos. Cuando el usuario se registra correctamente a un evento le llega un correo de confirmacion al evento.
+# Prerequisites
 
-Para ejecutar el proyecto después de clonarlo es necesario ejecutar un bundle install para instalar todas las dependenicas.
+Rails 7.0.3
 
-Despues realizamos las migraciones con el comando rails db:migrate.
+Ruby 3.1.2
+
+Postgres 12
+
+Clone the repo https://github.com/JulianRodriguez29/evento_app.git
+
+Una vez que tenga la copia, ejecute los siguientes comandos dentro del directorio:
+
+Ejecute el bundle install para instalar todas las gemas del proyecto
+Configure el nombre de usuario y la contraseña en config/database.yml
+Ejecute los siguientes comandos para crear las bases de datos, ejecute las migraciones iniciales rails db:create && rails db:migrate
 
 Abrimos la consola para agregar unos registros, aquí les dejo unos ejemplos.
 Evento.create(nombre: "Taller de Fotografía", descripcion: "Un taller práctico para aprender técnicas de fotografía.", fecha: Date.parse("2023-07-05"), imagen_url:"https://lacuartapared.com.mx/wp-content/uploads/2016/10/canon-989727-e1500506508230-1.jpg")
@@ -16,3 +26,23 @@ Evento.create(nombre: "Danza Folklorica", descripcion: "Una manifestación que r
 
 Una vez poblada la base de datos con los ejemplos, ya podemos ejecutar el servidor con el comando rails server.
 
+Ejecute el siguiente comando bin/webpack-dev-server para habilitar la recarga en vivo.
+Vaya a su host local http://127.0.0.1:3000
+
+# Información general
+
+Esta es una aplicacion sencilla para realizar reservaciones a eventos. Cuando el usuario se registra correctamente a un evento le llega un correo de confirmacion al evento.
+
+# Screenshots del proyecto
+
+La página principal del proyecto donde se despliegan los eventos que han sido incluidos en la base de datos.
+![Screenshot](./screenshots/index_eventos.png)
+
+Una vez que el usuario selecciona el evento al que se quiere registrar se le redirige al form de registro.
+![Screenshot](./screenshots/form_de_registro.png)
+
+Una vez ha ingresado la información se le confirma su reservación.
+![Screenshot](./screenshots/confirmacion_de_reservacion.jpg)
+
+Después se le manda un correo con el resumen de su reservación.
+![Screenshot](./screenshots/email_de_reservacion.jpg)
